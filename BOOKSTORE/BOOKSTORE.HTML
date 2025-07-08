@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookworld | Astley Hall</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="BOOKSTORE.CSS">
+  <style>
+    /* Responsive Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Responsive Hero Section */
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+
+    .cta {
+      padding: 0.5rem 1.2rem;
+    }
+
+    /* Responsive About Section */
+    .about-content {
+      flex-direction: column;
+      padding: 20px 15px;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+    }
+
+    .about p {
+      font-size: 0.95rem;
+      padding: 15px;
+    }
+
+    /* Responsive Genre Cards */
+    .genre-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+    }
+
+    .genre-card {
+      width: 100%;
+    }
+
+    /* Responsive Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-card {
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery-card img {
+      height: auto;
+    }
+
+    /* Responsive Footer */
+    .footer {
+      padding: 30px 20px;
+    }
+
+    .social-icon, .menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .menu__link, .social-icon__link {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Readers Choice</h1>
+      <p>Where every page opens a new adventure.</p>
+      <a href="#collections" class="cta">Browse Collection</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="https://res.cloudinary.com/dopbzrpri/video/upload/v1751979216/about_section_video_wkioq1.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="about-content container">
+      <h2>Our Story</h2>
+      <p>
+        Dehradun’s most loved local bookstores. Thought to have started in the late 1980s or early 1990s, the store began as a modest bookstall and gradually transformed into a vibrant literary hub, trusted by generations of readers. What sets us apart? We offer a rare blend of new and secondhand books, including fiction, non-fiction, encyclopedias, religious texts, and even popular manga titles like Naruto and Spy x Family. With prices often ranging from just ₹150–₹200, we make reading affordable and accessible for everyone. Unlike corporate bookshops, Reader’s Choice is driven by warmth, honesty, and personal connection. Visitors often praise the friendly and helpful owner, and many return not just for the books, but for the experience. We’ve earned our place in the community by being different from the rest—offering unique finds, fair prices, and a welcoming vibe. Whether you're looking for a bestseller, a hidden gem, or a nostalgic reread, Reader’s Choice is a place where stories live on, and  feel at home.
+      </p>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <h2>Explore Our Shelves</h2>
+      <div class="genre-grid">
+        <div class="genre-card">
+          <img src="books geners/friction book.jpg" alt="Fiction Books">
+          <h3>Fiction</h3>
+        </div>
+        <div class="genre-card">
+          <img src="books geners/non friction.webp" alt="Non-Fiction Books">
+          <h3>Non-Fiction</h3>
+        </div>
+        <div class="genre-card">
+          <img src="books geners/children books.webp" alt="Children's Books">
+          <h3>Children's Books</h3>
+        </div>
+        <div class="genre-card">
+          <img src="books geners/academic and competative books.webp" alt="Academic & Competitive">
+          <h3>Academic & Competitive</h3>
+        </div>
+        <div class="genre-card">
+          <img src="books geners/literature.webp" alt="Regional Literature">
+          <h3>Regional Literature</h3>
+        </div>
+        <div class="genre-card">
+          <img src="books geners/journels.webp" alt="Magazines & Journals">
+          <h3>Magazines & Journals</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2>Inside the Store</h2>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="book store galary/book store interior.jpg" alt="Bookstore interior">
+          <div class="caption">A warm and inviting entrance that welcomes every reader.</div>
+        </div>
+        <div class="gallery-card">
+          <img src="book store galary/bookselves.jpg" alt="Bookshelves">
+          <div class="caption">Organized shelves filled with genres from classics to bestsellers.</div>
+        </div>
+        <div class="gallery-card">
+          <img src="book store galary/reading corner.webp" alt="Reading corner">
+          <div class="caption">Our peaceful reading corner – a perfect spot to get lost in a book.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Customer Reviews Section -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2>What Our Customers Say</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <p class="review-text">"Awesome experience.
+Behaviour was very nice.
+A huge and total collection of 
+books of specific interest
+I am really lucky to have Readers Choice in my City"</p>
+            <div class="star-rating">★★★★★</div>
+        <p class="review-author">– JEET MUKHOPADHYAY</p>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"A treasure trove of classics and bestsellers , which can be bought at throwaway prices or can be borrowed for a month@Rs50 !"</p>
+           <div class="star-rating">★★★★★</div>
+        <p class="review-author">– PRIYA SINGH</p>
+      </div>
+      <div class="review-card">
+        <p class="review-text">"Affordable books. This shop is a treasure trove."
+        </p>
+           <div class="star-rating">★★★★★</div>
+        <p class="review-author">– ARCHANA THAPA</p>
+      </div>
+      <div class="rating-container">
+  <p>Rate this bookstore:</p>
+  <div class="star-rating-input">
+    <span data-star="1">★</span>
+    <span data-star="2">★</span>
+    <span data-star="3">★</span>
+    <span data-star="4">★</span>
+    <span data-star="5">★</span>
+  </div>
+  <p class="user-rating-output">Your rating: 0</p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="footer">
+  <video class="footer_video" muted loop autoplay playsinline>
+    <source src="//cdn.shopify.com/s/files/1/0526/6905/5172/t/5/assets/footer.mp4?v=29581141968431347981633714450" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <div class="footer_inner">
+
+      <div class="layout main-footer">
+        <!-- Newsletter -->
+        <div class="layout_item w-50">
+          <div class="newsletter">
+            <h3 class="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.</h3>
+            <form>
+              <input type="text" placeholder="Email Address" />
+              <button type="submit">
+                ➜
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Menu Links -->
+        <div class="layout_item w-25">
+          <nav>
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#">Shop All</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Vibes</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Support Links -->
+        <div class="layout_item w-25">
+          <nav>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Help & FAQ</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="layout bottom-footer">
+        <!-- Social Icons -->
+        <div class="layout_item w-50">
+          <ul class="social-icons">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          </ul>
+        </div>
+
+        <!-- App or CTA Icon -->
+        <div class="layout_item w-25" style="display: flex; justify-content: end; align-items: center;">
+          <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 10h3l-4-4-4 4h3v4h2v-4z"/></svg>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer_copyright">
+        <p>&copy; 2025 Reader's Choice | Crafted with love in Dehradun.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script>
+  const stars = document.querySelectorAll(".star-rating-input span");
+  const output = document.querySelector(".user-rating-output");
+  let selectedRating = 0;
+
+  stars.forEach((star, index) => {
+    star.addEventListener("mouseover", () => {
+      stars.forEach((s, i) => {
+        s.classList.toggle("hover", i <= index);
+      });
+    });
+
+    star.addEventListener("mouseout", () => {
+      stars.forEach((s, i) => {
+        s.classList.remove("hover");
+      });
+    });
+
+    star.addEventListener("click", () => {
+      selectedRating = index + 1;
+      stars.forEach((s, i) => {
+        s.classList.toggle("selected", i < selectedRating);
+      });
+      output.textContent = `Your rating: ${selectedRating}`;
+    });
+  });
+</script>
+
+</body>
+</html>
